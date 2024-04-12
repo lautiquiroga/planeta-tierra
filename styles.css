@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(./media/espacio.jpg);
+  backdrop-filter: brightness(0.3);
+  background-size: cover; */
+  background-color: black;
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  z-index: -1;
+}
+
+.container {
+  height: 100vh;
+}
+
+.btns {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card1,
+.card2 {
+  width: 270px;
+  height: 350px;
+  overflow: auto;
+  background-color: gray;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: absolute;
+  overflow-x: hidden;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.card2 {
+  background-color: rgb(172, 130, 130);
+}
+
+.closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .card1,
+  .card2 {
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
+    width: 80vw;
+    height: 150px;
+  }
+}

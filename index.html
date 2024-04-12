@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- <link
+      rel="preload"
+      href="https://prod.spline.design/2j8azjL2GtoGDVRu/scene.splinecode"
+      as="fetch"
+    /> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+  </head>
+  <body>
+    <img class="loader" src="./media/loader.gif" alt="" />
+    <div class="container">
+      <canvas id="canvas3d"></canvas>
+    </div>
+    <div class="btns">
+      <button class="btn">Botón 1</button>
+      <button class="btn">Botón 2</button>
+      <button class="btn">Botón 3</button>
+      <button class="btn">Botón 4</button>
+      <button class="btn">Botón 5</button>
+    </div>
+    <div class="card1">
+      <h3>Información</h3>
+      <span class="closeBtn">X</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut maiores
+        at temporibus adipisci facilis, expedita quis sit quos hic nihil nisi
+        omnis odit vero consequuntur qui ducimus vitae recusandae? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quas ut maiores at
+        temporibus adipisci facilis, expedita quis sit quos hic nihil nisi omnis
+        odit vero consequuntur qui ducimus vitae recusandae? Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Quas ut maiores at temporibus
+        adipisci facilis, expedita quis sit quos hic nihil nisi omnis odit vero
+        consequuntur qui ducimus vitae recusandae?
+      </p>
+    </div>
+    <div class="card2">
+      <h3>Información 2</h3>
+      <span class="closeBtn">X</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut maiores
+        at temporibus adipisci facilis, expedita quis sit quos hic nihil nisi
+        omnis odit vero consequuntur qui ducimus vitae recusandae? Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quas ut maiores at
+        temporibus adipisci facilis, expedita quis sit quos hic nihil nisi omnis
+        odit vero consequuntur qui ducimus vitae recusandae? Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Quas ut maiores at temporibus
+        adipisci facilis, expedita quis sit quos hic nihil nisi omnis odit vero
+        consequuntur qui ducimus vitae recusandae?
+      </p>
+    </div>
+    <!-- <script
+      async
+      src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"
+    ></script> -->
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.0.68/build/runtime.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
